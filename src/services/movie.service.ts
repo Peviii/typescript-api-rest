@@ -8,7 +8,7 @@ export async function findOneMovie(query: FilterQuery<movieType>, options: Query
 }
 
 export async function findAllMovies() {
-    return Movie.find();
+    return Movie.find().exec();
 }
 
 export async function createNewMovie(input: movieType) {
