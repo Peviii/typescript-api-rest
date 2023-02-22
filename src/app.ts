@@ -13,10 +13,12 @@ app.use(express.json());
 app.use(movie);
 app.use(studio);
 app.get('/', (req: Request, res: Response) => {
-    res.status(200).send("Ola Typescript no back-end, seja muito bem vindo!")
+    res.status(200).send("Ola, seja muito bem vindo a esta aplicação!")
 });
 /** */
 app.listen(port, () => {
     console.log("server running on localhost:3000")
     connect();
 });
+
+export { app }
